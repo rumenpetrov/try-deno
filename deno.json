@@ -1,0 +1,19 @@
+{
+  "workspace": [
+    "./packages/client",
+    "./packages/server",
+    "./packages/helpers"
+  ],
+  "tasks": {},
+  "imports": {},
+  "nodeModulesDir": "auto",
+  "exclude": [".vscode"],
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  }
+}

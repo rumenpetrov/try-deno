@@ -1,0 +1,10 @@
+{
+  "name": "@try-deno/server",
+  "version": "1.0.0",
+  "exports": "./index.ts",
+  "tasks": {
+    "dev": "deno --watch --allow-net index.ts",
+    "start": "deno run index.ts"
+  },
+  "imports": {}
+}

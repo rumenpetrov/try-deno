@@ -1,0 +1,9 @@
+{
+  "name": "@try-deno/helpers",
+  "version": "1.0.0",
+  "exports": "./index.ts",
+  "tasks": {},
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
