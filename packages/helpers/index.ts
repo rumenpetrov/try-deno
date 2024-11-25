@@ -1,3 +1,3 @@
-import sayHello from './say-hello.ts';
+import sayHello from "./say-hello.ts";
 
 export default sayHello;

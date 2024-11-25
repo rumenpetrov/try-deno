@@ -1,5 +1,5 @@
-import React from 'react';
-import type { ReactNode } from 'react';
+import React from "react";
+import type { ReactNode } from "react";
 
 const delay = (timeout: number) =>
   new Promise((resolve) => setTimeout(resolve, timeout));
@@ -26,7 +26,7 @@ export const Button = (props: Props): ReactNode => {
     >
       <span>{children}</span>
       <span>{tmp}</span>
-      <span style={{ fontSize: '20px', lineHeight: 1 }}>&reg;</span>
+      <span style={{ fontSize: "20px", lineHeight: 1 }}>&reg;</span>
     </button>
   );
 };
