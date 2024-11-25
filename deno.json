@@ -1,13 +1,27 @@
 {
   "workspace": [
+    "./packages/host",
     "./packages/client",
     "./packages/server",
+    "./packages/react-ui",
     "./packages/helpers"
   ],
-  "tasks": {},
+  "tasks": {
+    "root:dev": "deno task --cwd packages/helpers build && (deno task --cwd packages/host dev & deno task --cwd packages/client dev & deno task --cwd packages/server dev)",
+    "root:start": "deno task --cwd packages/helpers build && (deno task --cwd packages/host start & deno task --cwd packages/client start & deno task --cwd packages/server start)"
+  },
   "imports": {},
   "nodeModulesDir": "auto",
-  "exclude": [".vscode"],
+  "exclude": [
+    ".git",
+    ".vscode"
+  ],
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react"
+  },
   "fmt": {
     "useTabs": false,
     "lineWidth": 80,

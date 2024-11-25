@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "deno run -A npm:vite --port 3001",
+    "dev": "deno run -A npm:vite --port 3002",
     "build": "tsc -b && deno run -A npm:vite build",
     "lint": "eslint .",
     "preview": "deno run -A npm:vite --port 3001 preview",

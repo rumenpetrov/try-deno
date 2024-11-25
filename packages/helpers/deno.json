@@ -2,7 +2,9 @@
   "name": "@try-deno/helpers",
   "version": "1.0.0",
   "exports": "./index.ts",
-  "tasks": {},
+  "tasks": {
+    "build": "echo 'Simulating build process' && sleep 5 && echo 'Done!'"
+  },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
   }

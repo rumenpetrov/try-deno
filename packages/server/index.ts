@@ -2,7 +2,7 @@ import sayHello from '@try-deno/helpers';
 
 const POST = 3000;
 
-Deno.serve({ port: POST, hostname: '0.0.0.0' }, (_req) => {
+Deno.serve({ port: POST }, () => {
   return new Response('Deno!');
 });
 
