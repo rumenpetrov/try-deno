@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@opensrc/holycow@*": "1.0.0",
     "jsr:@std/assert@1": "1.0.8",
+    "jsr:@std/dotenv@*": "0.225.2",
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:@deno/vite-plugin@1": "1.0.0_vite@5.4.11",
     "npm:@eslint/js@^9.13.0": "9.15.0",
@@ -13,6 +14,7 @@
     "npm:@vitejs/plugin-react@^4.3.3": "4.3.3_vite@5.4.11_@babel+core@7.26.0",
     "npm:create-vite-extra@latest": "2.4.1",
     "npm:create-vite@latest": "5.5.5",
+    "npm:dotenv@16.4.5": "16.4.5",
     "npm:eslint-plugin-react-hooks@5": "5.0.0_eslint@9.15.0",
     "npm:eslint-plugin-react-refresh@~0.4.14": "0.4.14_eslint@9.15.0",
     "npm:eslint@^9.13.0": "9.15.0",
@@ -38,6 +40,9 @@
       "dependencies": [
         "jsr:@std/internal"
       ]
+    },
+    "@std/dotenv@0.225.2": {
+      "integrity": "e2025dce4de6c7bca21dece8baddd4262b09d5187217e231b033e088e0c4dd23"
     },
     "@std/internal@1.0.5": {
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
@@ -681,6 +686,9 @@
     },
     "deep-is@0.1.4": {
       "integrity": "sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ=="
+    },
+    "dotenv@16.4.5": {
+      "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
     },
     "electron-to-chromium@1.5.63": {
       "integrity": "sha512-ddeXKuY9BHo/mw145axlyWjlJ1UBt4WK3AlvkT7W2AbqfRQoacVoRUCF6wL3uIx/8wT9oLKXzI+rFqHHscByaA=="

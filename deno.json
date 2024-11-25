@@ -7,7 +7,7 @@
     "./packages/helpers"
   ],
   "tasks": {
-    "root:dev": "deno task --cwd packages/helpers build && (deno task --cwd packages/host dev & deno task --cwd packages/client dev & deno task --cwd packages/server dev)",
+    "root:dev": "deno task --cwd packages/host dev & deno task --cwd packages/client dev & deno task --cwd packages/server dev",
     "root:start": "deno task --cwd packages/helpers build && (deno task --cwd packages/host start & deno task --cwd packages/client start & deno task --cwd packages/server start)"
   },
   "imports": {},

@@ -10,10 +10,9 @@ interface Props {
 
 export const Button = (props: Props): ReactNode => {
   const { children } = props;
-  const [tmp, setTmp] = React.useState(0);
+  const [tmp, setTmp] = React.useState<number>(0);
 
   const [isPending, startTransition] = React.useTransition();
-  console.log(isPending);
 
   return (
     <button
@@ -21,7 +20,7 @@ export const Button = (props: Props): ReactNode => {
       onClick={() => {
         startTransition(async () => {
           await delay(5000);
-          setTmp((prev) => prev + 1);
+          setTmp((prev: number) => prev + 1);
         });
       }}
     >

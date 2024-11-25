@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "dev": "deno --watch --allow-net index.ts",
-    "start": "deno run --allow-net index.ts"
+    "dev": "deno --watch --allow-read --allow-net --allow-env --env-file=../../.env index.ts",
+    "start": "deno run --allow-read --allow-net --allow-env index.ts"
   },
   "imports": {}
 }
